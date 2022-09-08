@@ -13,14 +13,16 @@
     --grigiochiaro: lightgrey;
     --azzurro: rgb(13, 168, 219);
     --bianco: white;
+    --rossoacceso: red;
 }
-
+html{
+    font-family: 'Roboto', sans-serif;
+}
 /* parte header */
 
 header{
     width: 100%;
     height: 3vh;
-    border: 1px solid black;
 }
 
 .icone-nav{
@@ -49,13 +51,79 @@ nav{
 main{
     width: 100%;
     height: 89vh;
+    background-color: var(--grigioscuro);
+}
+.top-sx span{
+    color: var(--grigiochiaro);
+}
+.top-dx span{
+    color: var(--grigiochiaro);
+    margin-right: 5px;
+}
+.top-main-div{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-table-cells{
+    color: var(--grigiochiaro);
+}
+.fa-shield{
+    color: var(--verde);
+    margin: 0 5px;
+}
+.fa-circle{
+    color: var(--rossoacceso);
+}
+.top-main-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+/* parte griglia */
 
+.container-main{
+    width: 100%;
+}
+.fa-caret-right{
+    color: var(--grigiochiaro);
+}
+.fa-caret-left{
+    color: var(--grigiochiaro);
+}
+.aside-sx{
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+.aside-dx{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+.griglia img{
+    width: 260px;
+    height: 155px;
+    margin: 2px;
+}
+.griglia{
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bot-main-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /* sezione strumenti */
 
 .strumenti{
-    border: 1px solid black;
     width: 100%;
     height: 8vh;
     background-color: var(--grigioscuro);
@@ -81,7 +149,7 @@ main{
     color: var(--bianco);
     padding: 3px 5px 3px 5px;
     border-radius: 5px;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 .str-sx{
     display: flex;
