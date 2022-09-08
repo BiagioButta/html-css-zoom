@@ -22,11 +22,20 @@ header{
     height: 3vh;
     border: 1px solid black;
 }
+
+.icone-nav{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon{
+    margin: 0 15px
+}
 #logo{
     width: 30px;
     height: 25px;
 }
-.logo{
+.logo-nav{
     display: flex;
     align-items: center;
 }
@@ -34,9 +43,7 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-.fa-thin{
-    margin-right: 1vw;
-}
+
 /* parte main */
 
 main{
@@ -59,15 +66,16 @@ main{
     height: 8vh;
     align-items: center;
 }
-.fa-solid{
-    font-size: 40px;
-    color: var(--grigiochiaro);
-    /* margin-left: 50px; */
-}
-.fa-arrow-up-from-bracket{
+#icon-green{
     color: var(--verde);
 }
-
+#text-green{
+    color: var(--verde);
+}
+.strumenti .fa-solid{
+    font-size: 30px;
+    color: var(--grigiochiaro);
+}
 .esc{
     background-color: var(--rosso);
     color: var(--bianco);
@@ -85,7 +93,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
-p{
+.strumenti p{
     color: var(--grigiochiaro);
     text-align: center;
 }
