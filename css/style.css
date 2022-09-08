@@ -35,7 +35,7 @@ header{
 }
 #logo{
     width: 30px;
-    height: 25px;
+    height: 24px;
 }
 .logo-nav{
     display: flex;
@@ -46,6 +46,12 @@ nav{
     justify-content: space-between;
 }
 
+.icone-top-x{
+    height: 3vh
+}
+.icone-top-dx{
+    height: 3vh;
+}
 /* parte main */
 
 main{
@@ -121,6 +127,18 @@ main{
     flex-direction: row;
     justify-content: space-between;
 }
+.relative{
+    position: relative;
+}
+.speaker{
+    position: absolute;
+    top: 130px;
+    right: 140px;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    color: var(--grigiochiaro);
+}
 /* sezione strumenti */
 
 .strumenti{
@@ -168,4 +186,25 @@ main{
 .str-center{
     display: flex;
     flex-direction: row;
+}
+
+/* effetti */
+
+.icone-top-dx:hover{
+    background-color: var(--grigiochiaro);
+}
+.icone-top-x:hover{
+    background-color: var(--rosso);
+}
+.second{
+    display: none;
+}
+.first{
+    display: inline-block;
+}
+.bot-icon:hover .second{
+    display: inline-block;
+}
+.bot-icon:hover .first{
+    display: none;
 }
